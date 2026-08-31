@@ -1,7 +1,7 @@
 version: 2026.232.0520
 charly-comfyui:
     candy:
-        version: 2026.243.0100
+        version: 2026.243.0908
         description: |-
             Metadata concept candy owning the charly-comfyui skills whose names have no namesake candy (comfyui image-generation image). Owns its family's `skill:` kind entities (sibling nodes in this file) — the
             the plugins→candies migration; candy/plugin-marketplace regenerates the marketplace
@@ -62,7 +62,7 @@ comfyui-layer-skill:
               candy:
                 base: nvidia
                 candy:
-                  - '@github.com/opencharly/pod-comfyui:v2026.243.0516'
+                  - '@github.com/opencharly/pod-comfyui:vTAG'
             ```
             
             ## Used In Boxes
