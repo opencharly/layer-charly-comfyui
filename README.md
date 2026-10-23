@@ -1,49 +1,34 @@
-# charly-comfyui
+# charly-comfyui — retired
 
-The `charly-comfyui` family — the ComfyUI image-generation command skills.
+> **RETIRED — this repo publishes nothing.** Its one `comfyui`-family skill lives in the
+> repo that holds the code, plugin or config it documents (the table below). Nothing is
+> authored, built, deployed or consumed here: a change to it is a change at its destination
+> repo, in the same pull request as the entity it documents.
 
-The `charly-comfyui` candy is a **concept candy**: it ships no install content
-and owns the `comfyui` family of `skill:` entities whose names have no namesake
-candy. It currently carries the `comfyui-layer` skill (the ComfyUI
-image-generation service). `candy/plugin-marketplace` regenerates the standalone
-[opencharly/marketplace](https://github.com/opencharly/marketplace) corpus from
-these entities, so the skills are authored here and projected there.
+**This repo no longer authors a skill.** It was the `charly-comfyui` concept candy: a `true`-no-op `plan:` and one `skill:` entity, with the prose in `.agents/skills/`.
+Under `AGENTS.md` Part II #5 a skill lives in the repo whose code,
+plugin or config it describes — and this repo holds none of it (measured before the
+change: **0 `.go`, 0 `.cue`, no `candy/` directory**) — so it moved, byte-identically,
+to the repo that does:
 
-## What it provides
+| Skill | Now authored in | The entity that owns it |
+|---|---|---|
+| `comfyui-layer` | [`opencharly/pod-comfyui`](https://github.com/opencharly/pod-comfyui) | the `comfyui` candy it documents |
+
+**The addresses did not change.** Every skill keeps its `comfyui` family at its
+destination node, so `/charly-comfyui:<skill>` still resolve — they are simply authored
+where the entity is implemented. The move is the rule `AGENTS.md` Part II #5 states, tracked
+in [opencharly/opencharly#600](https://github.com/opencharly/opencharly/issues/600).
+
+## What remains here
 
 | Property | Value |
 |---|---|
-| Layer / candy | `charly-comfyui` (concept candy) |
+| Layer / candy | `charly-comfyui` (drained concept candy) |
 | Install content | none — a `true` no-op `plan:` |
-| Owns | 1 `skill:` entity: `comfyui-layer` |
-| Projected to | `marketplace/comfyui/skills/` |
+| Owns | nothing — 0 `skill:` entities |
 | Service / port | none |
 
-## How to use it
-
-This repo is consumed as a **skill source**, not as an image layer. Edit the
-`skill:` entities in `charly.yml`; the marketplace regeneration projects them
-into `/charly-comfyui:*` pages. To reference the repo directly:
-
-```yaml
-my-box:
-  candy:
-    base: fedora
-    candy:
-      - '@github.com/opencharly/layer-charly-comfyui:v2026.243.2059'
-```
-
-## Layout
-
-- `charly.yml` — the `charly-comfyui:` concept candy entity plus the
-  `comfyui-layer-skill:` entity.
-- `.github/workflows/tag-on-merge.yml` — CalVer tag + `CHANGELOG/` on merge.
-- `README.md` — this user overview.
-
-## Related
-
-- Owning skill: `/charly-comfyui:comfyui-layer`
-- Authoring reference: `/charly-image:layer`
-- [`opencharly/marketplace`](https://github.com/opencharly/marketplace) — the projected corpus
-- [`opencharly/charly`](https://github.com/opencharly/charly) — the charly CLI and image builder
-- [`opencharly/opencharly`](https://github.com/opencharly/opencharly) — the umbrella
+Do not compose, reference or edit this repo: the skills, their routing nodes and their
+prose all live at the destinations above, and this repo's retirement is tracked in
+[opencharly/opencharly#600](https://github.com/opencharly/opencharly/issues/600).
